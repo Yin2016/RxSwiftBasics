@@ -46,6 +46,7 @@ class RxTestViewController: UIViewController {
             }
         )
         
+        
         // 点击事件处理
         table.rx.itemSelected.subscribe(onNext:{
             let cell = self.table.cellForRow(at: $0)
@@ -53,7 +54,8 @@ class RxTestViewController: UIViewController {
             
             switch $0.row {
             case 0:
-                print("Single")
+                // Single
+                self.navigationController?.pushViewController(SingleViewController(), animated: true)
             default:
                 print("未知")
             }
