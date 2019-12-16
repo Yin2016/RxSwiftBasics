@@ -7,16 +7,13 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
-import RxDataSources
 
 class RxTestViewController: UIViewController {
 
     let table : UITableView = {
         let table = UITableView()
         table.estimatedRowHeight = 50
-        table.separatorColor = .gray
+        table.separatorColor = .lightGray
         return table
     }()
     
@@ -56,6 +53,12 @@ class RxTestViewController: UIViewController {
             case 0:
                 // Single
                 self.navigationController?.pushViewController(SingleViewController(), animated: true)
+            case 1:
+                // Completable
+                self.navigationController?.pushViewController(CompletableViewController(), animated: true)
+            case 2:
+                // Maybe
+                self.navigationController?.pushViewController(MaybeViewController(), animated: true)
             default:
                 print("未知")
             }

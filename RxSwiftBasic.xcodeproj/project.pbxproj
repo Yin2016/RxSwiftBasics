@@ -15,6 +15,10 @@
 		18EAE31823A0BB75009D968C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EAE31723A0BB75009D968C /* Main.storyboard */; };
 		18F7743323A36AAA0024DE7C /* RxTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743223A36AAA0024DE7C /* RxTestViewController.swift */; };
 		18F7743523A384FA0024DE7C /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743423A384FA0024DE7C /* SingleViewController.swift */; };
+		18F7743723A7485E0024DE7C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743623A7485E0024DE7C /* BaseViewController.swift */; };
+		18F7743923A748B10024DE7C /* CompletableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743823A748B10024DE7C /* CompletableViewController.swift */; };
+		18F7743C23A74B750024DE7C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743B23A74B750024DE7C /* Common.swift */; };
+		18F7743E23A76F000024DE7C /* MaybeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743D23A76F000024DE7C /* MaybeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		18EAE31723A0BB75009D968C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		18F7743223A36AAA0024DE7C /* RxTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTestViewController.swift; sourceTree = "<group>"; };
 		18F7743423A384FA0024DE7C /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		18F7743623A7485E0024DE7C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		18F7743823A748B10024DE7C /* CompletableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletableViewController.swift; sourceTree = "<group>"; };
+		18F7743B23A74B750024DE7C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		18F7743D23A76F000024DE7C /* MaybeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybeViewController.swift; sourceTree = "<group>"; };
 		B6D556FD700F461808FC117C /* Pods-RxSwiftBasic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBasic.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftBasic/Pods-RxSwiftBasic.release.xcconfig"; sourceTree = "<group>"; };
 		E8350C6C512808510FF496C6 /* Pods-RxSwiftBasic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBasic.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftBasic/Pods-RxSwiftBasic.debug.xcconfig"; sourceTree = "<group>"; };
 		F7E48816A92241AFA8A2610F /* Pods_RxSwiftBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,13 +76,25 @@
 				18EAE2E3239F906D009D968C /* AppDelegate.swift */,
 				18EAE2E7239F906D009D968C /* ViewController.swift */,
 				18F7743223A36AAA0024DE7C /* RxTestViewController.swift */,
-				18F7743423A384FA0024DE7C /* SingleViewController.swift */,
+				18F7743623A7485E0024DE7C /* BaseViewController.swift */,
+				18F7743B23A74B750024DE7C /* Common.swift */,
+				18F7743A23A74AAB0024DE7C /* Observable */,
 				18EAE31723A0BB75009D968C /* Main.storyboard */,
 				18EAE2EC239F9070009D968C /* Assets.xcassets */,
 				18EAE2EE239F9070009D968C /* LaunchScreen.storyboard */,
 				18EAE2F1239F9070009D968C /* Info.plist */,
 			);
 			path = RxSwiftBasic;
+			sourceTree = "<group>";
+		};
+		18F7743A23A74AAB0024DE7C /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				18F7743423A384FA0024DE7C /* SingleViewController.swift */,
+				18F7743823A748B10024DE7C /* CompletableViewController.swift */,
+				18F7743D23A76F000024DE7C /* MaybeViewController.swift */,
+			);
+			path = Observable;
 			sourceTree = "<group>";
 		};
 		AEA983E511462C515CD25CB1 /* Pods */ = {
@@ -209,6 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F7743C23A74B750024DE7C /* Common.swift in Sources */,
+				18F7743E23A76F000024DE7C /* MaybeViewController.swift in Sources */,
+				18F7743723A7485E0024DE7C /* BaseViewController.swift in Sources */,
+				18F7743923A748B10024DE7C /* CompletableViewController.swift in Sources */,
 				18EAE2E8239F906D009D968C /* ViewController.swift in Sources */,
 				18F7743323A36AAA0024DE7C /* RxTestViewController.swift in Sources */,
 				18F7743523A384FA0024DE7C /* SingleViewController.swift in Sources */,
