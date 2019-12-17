@@ -59,6 +59,12 @@ class RxTestViewController: UIViewController {
             case 2:
                 // Maybe
                 self.navigationController?.pushViewController(MaybeViewController(), animated: true)
+            case 3:
+                // Driver
+                self.navigationController?.pushViewController(DriverController(), animated: true)
+            case 4:
+                // Signal
+                self.navigationController?.pushViewController(SignalViewController(), animated: true)
             default:
                 print("未知")
             }

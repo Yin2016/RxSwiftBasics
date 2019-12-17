@@ -19,6 +19,8 @@
 		18F7743923A748B10024DE7C /* CompletableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743823A748B10024DE7C /* CompletableViewController.swift */; };
 		18F7743C23A74B750024DE7C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743B23A74B750024DE7C /* Common.swift */; };
 		18F7743E23A76F000024DE7C /* MaybeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743D23A76F000024DE7C /* MaybeViewController.swift */; };
+		19B065903E39D46A5603702C /* DriverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B064E790170363510788E9 /* DriverController.swift */; };
+		19B06D0D9F7B4FDEF2FE2DA3 /* SignalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		18F7743823A748B10024DE7C /* CompletableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletableViewController.swift; sourceTree = "<group>"; };
 		18F7743B23A74B750024DE7C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		18F7743D23A76F000024DE7C /* MaybeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybeViewController.swift; sourceTree = "<group>"; };
+		19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalViewController.swift; sourceTree = "<group>"; };
+		19B064E790170363510788E9 /* DriverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverController.swift; sourceTree = "<group>"; };
 		B6D556FD700F461808FC117C /* Pods-RxSwiftBasic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBasic.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftBasic/Pods-RxSwiftBasic.release.xcconfig"; sourceTree = "<group>"; };
 		E8350C6C512808510FF496C6 /* Pods-RxSwiftBasic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBasic.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftBasic/Pods-RxSwiftBasic.debug.xcconfig"; sourceTree = "<group>"; };
 		F7E48816A92241AFA8A2610F /* Pods_RxSwiftBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +97,8 @@
 				18F7743423A384FA0024DE7C /* SingleViewController.swift */,
 				18F7743823A748B10024DE7C /* CompletableViewController.swift */,
 				18F7743D23A76F000024DE7C /* MaybeViewController.swift */,
+				19B064E790170363510788E9 /* DriverController.swift */,
+				19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */,
 			);
 			path = Observable;
 			sourceTree = "<group>";
@@ -237,6 +243,8 @@
 				18F7743323A36AAA0024DE7C /* RxTestViewController.swift in Sources */,
 				18F7743523A384FA0024DE7C /* SingleViewController.swift in Sources */,
 				18EAE2E4239F906D009D968C /* AppDelegate.swift in Sources */,
+				19B065903E39D46A5603702C /* DriverController.swift in Sources */,
+				19B06D0D9F7B4FDEF2FE2DA3 /* SignalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
