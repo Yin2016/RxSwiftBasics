@@ -19,7 +19,12 @@
 		18F7743923A748B10024DE7C /* CompletableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743823A748B10024DE7C /* CompletableViewController.swift */; };
 		18F7743C23A74B750024DE7C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743B23A74B750024DE7C /* Common.swift */; };
 		18F7743E23A76F000024DE7C /* MaybeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743D23A76F000024DE7C /* MaybeViewController.swift */; };
+		19B060389A5FA2291D27EEB1 /* PublishSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B066AFC5F4B0513A444882 /* PublishSubjectViewController.swift */; };
+		19B06190D8050FBC5DBFB16B /* ReplaySubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06DC1C7F8F672EB189E8D /* ReplaySubjectViewController.swift */; };
+		19B062E62C171A2F9BFC5387 /* AsyncSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06D951C8602DE037AD108 /* AsyncSubjectViewController.swift */; };
 		19B065903E39D46A5603702C /* DriverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B064E790170363510788E9 /* DriverController.swift */; };
+		19B065E780188E13F44683D8 /* BinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0614B044E4285626A6F42 /* BinderViewController.swift */; };
+		19B067F131010D505E2182A0 /* AnyObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06813ECCF6EE4E83B039E /* AnyObserverViewController.swift */; };
 		19B06D0D9F7B4FDEF2FE2DA3 /* SignalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +42,13 @@
 		18F7743823A748B10024DE7C /* CompletableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletableViewController.swift; sourceTree = "<group>"; };
 		18F7743B23A74B750024DE7C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		18F7743D23A76F000024DE7C /* MaybeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybeViewController.swift; sourceTree = "<group>"; };
+		19B0614B044E4285626A6F42 /* BinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinderViewController.swift; sourceTree = "<group>"; };
 		19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalViewController.swift; sourceTree = "<group>"; };
 		19B064E790170363510788E9 /* DriverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverController.swift; sourceTree = "<group>"; };
+		19B066AFC5F4B0513A444882 /* PublishSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishSubjectViewController.swift; sourceTree = "<group>"; };
+		19B06813ECCF6EE4E83B039E /* AnyObserverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyObserverViewController.swift; sourceTree = "<group>"; };
+		19B06D951C8602DE037AD108 /* AsyncSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncSubjectViewController.swift; sourceTree = "<group>"; };
+		19B06DC1C7F8F672EB189E8D /* ReplaySubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaySubjectViewController.swift; sourceTree = "<group>"; };
 		B6D556FD700F461808FC117C /* Pods-RxSwiftBasic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBasic.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftBasic/Pods-RxSwiftBasic.release.xcconfig"; sourceTree = "<group>"; };
 		E8350C6C512808510FF496C6 /* Pods-RxSwiftBasic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBasic.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftBasic/Pods-RxSwiftBasic.debug.xcconfig"; sourceTree = "<group>"; };
 		F7E48816A92241AFA8A2610F /* Pods_RxSwiftBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +93,8 @@
 				18F7743623A7485E0024DE7C /* BaseViewController.swift */,
 				18F7743B23A74B750024DE7C /* Common.swift */,
 				18F7743A23A74AAB0024DE7C /* Observable */,
+				19B067828187BF0A5E72F094 /* Observer */,
+				18F7743F23AA193D0024DE7C /* Subject */,
 				18EAE31723A0BB75009D968C /* Main.storyboard */,
 				18EAE2EC239F9070009D968C /* Assets.xcassets */,
 				18EAE2EE239F9070009D968C /* LaunchScreen.storyboard */,
@@ -101,6 +113,25 @@
 				19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */,
 			);
 			path = Observable;
+			sourceTree = "<group>";
+		};
+		18F7743F23AA193D0024DE7C /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				19B06D951C8602DE037AD108 /* AsyncSubjectViewController.swift */,
+				19B066AFC5F4B0513A444882 /* PublishSubjectViewController.swift */,
+				19B06DC1C7F8F672EB189E8D /* ReplaySubjectViewController.swift */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		19B067828187BF0A5E72F094 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				19B06813ECCF6EE4E83B039E /* AnyObserverViewController.swift */,
+				19B0614B044E4285626A6F42 /* BinderViewController.swift */,
+			);
+			path = Observer;
 			sourceTree = "<group>";
 		};
 		AEA983E511462C515CD25CB1 /* Pods */ = {
@@ -245,6 +276,11 @@
 				18EAE2E4239F906D009D968C /* AppDelegate.swift in Sources */,
 				19B065903E39D46A5603702C /* DriverController.swift in Sources */,
 				19B06D0D9F7B4FDEF2FE2DA3 /* SignalViewController.swift in Sources */,
+				19B067F131010D505E2182A0 /* AnyObserverViewController.swift in Sources */,
+				19B065E780188E13F44683D8 /* BinderViewController.swift in Sources */,
+				19B062E62C171A2F9BFC5387 /* AsyncSubjectViewController.swift in Sources */,
+				19B060389A5FA2291D27EEB1 /* PublishSubjectViewController.swift in Sources */,
+				19B06190D8050FBC5DBFB16B /* ReplaySubjectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

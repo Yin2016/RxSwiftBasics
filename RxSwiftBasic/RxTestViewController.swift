@@ -34,7 +34,7 @@ class RxTestViewController: UIViewController {
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         // 创建数据流
-        let items = Observable.just([SectionModel(model: "qe", items: ["Single", "Completable", "Maybe", "Driver", "Signal", "ControEvent"])])
+        let items = Observable.just([SectionModel(model: "qe", items: ["Single", "Completable", "Maybe", "Driver", "Signal", "AnyObserver", "Binder", "AsyncSubject", "PublishSubject"])])
         
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: {dataSource, tv, indexPath, element in
                 let cell = tv.dequeueReusableCell(withIdentifier: "cell")
@@ -65,6 +65,18 @@ class RxTestViewController: UIViewController {
             case 4:
                 // Signal
                 self.navigationController?.pushViewController(SignalViewController(), animated: true)
+            case 5:
+                // AnyObserver
+                self.navigationController?.pushViewController(AnyObserverViewController(), animated: true)
+            case 6:
+                // Binder
+                self.navigationController?.pushViewController(BinderViewController(), animated: true)
+            case 7:
+                // AsyncSubject
+                self.navigationController?.pushViewController(AsyncSubjectViewController(), animated: true)
+            case 8:
+                // PublishSubject
+                self.navigationController?.pushViewController(PublishSubjectViewController(), animated: true)
             default:
                 print("未知")
             }

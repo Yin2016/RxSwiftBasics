@@ -24,6 +24,8 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.automaticallyAdjustsScrollViewInsets = true
+
         self.view.backgroundColor = .white
 
         // Do any additional setup after loading the view.
@@ -33,6 +35,8 @@ class BaseViewController: UIViewController {
             make.width.equalToSuperview().offset(-20)
             make.height.equalToSuperview().offset(-20)
         }
+
+        self.codeText.scrollsToTop = true;
     }
     
     deinit {
