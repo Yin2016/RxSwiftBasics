@@ -1,14 +1,14 @@
 //
-//  RxTestViewController.swift
-//  RxSwiftBasic
-//
-//  Created by Yin on 2019/12/13.
-//  Copyright © 2019 Yin. All rights reserved.
+// Created by Yin on 2019/12/19.
+// Copyright (c) 2019 Yin. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class RxTestViewController: UIViewController {
+class OperatorViewController : UIViewController {
+
+    let disposeBag: DisposeBag = DisposeBag()
 
     let table: UITableView = {
         let table = UITableView()
@@ -17,13 +17,10 @@ class RxTestViewController: UIViewController {
         return table
     }()
 
-    let disposeBag = DisposeBag()
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.view.backgroundColor = .white
+        self.navigationItem.title = "Operator操作符"
 
         self.view.addSubview(table)
         table.snp.makeConstraints { (make) in
@@ -34,10 +31,8 @@ class RxTestViewController: UIViewController {
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
         // 创建数据流
-        let items = Observable.just([SectionModel(model: "qe",
-                items: ["Single", "Completable", "Maybe", "Driver", "Signal",
-                        "AnyObserver", "Binder", "AsyncSubject", "PublishSubject",
-                        "ReplaySubject", "BehaviorSubject", "Operator", "Disposable", "Schedulers", "Error Handling"])])
+        let items = Observable.just([SectionModel(model: "qe", 
+                items: ["filter、map、zip", "amb、buffer"])])
 
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { dataSource, tv, indexPath, element in
             let cell = tv.dequeueReusableCell(withIdentifier: "cell")
@@ -54,11 +49,11 @@ class RxTestViewController: UIViewController {
 
             switch $0.row {
             case 0:
-                // Single
-                self.navigationController?.pushViewController(SingleViewController(), animated: true)
+                // Filter Map Zip
+                self.navigationController?.pushViewController(FilterMapZipViewController(), animated: true)
             case 1:
-                // Completable
-                self.navigationController?.pushViewController(CompletableViewController(), animated: true)
+                // amb、buffer
+                self.navigationController?.pushViewController(AmbBufferViewController(), animated: true)
             case 2:
                 // Maybe
                 self.navigationController?.pushViewController(MaybeViewController(), animated: true)
@@ -86,25 +81,13 @@ class RxTestViewController: UIViewController {
             case 10:
                 // BehaviorSubject
                 self.navigationController?.pushViewController(BehaviorSubjectViewController(), animated: true)
-            case 11:
-                // Operator
-                self.navigationController?.pushViewController(OperatorViewController(), animated: true)
-            case 12:
-                // Operator
-                self.navigationController?.pushViewController(DisposableViewController(), animated: true)
-            case 13:
-                // Schedulers
-                self.navigationController?.pushViewController(SchedulersViewController(), animated: true)
-            case 14:
-                // Error Handling
-                self.navigationController?.pushViewController(ErrorHandlingViewController(), animated: true)
             default:
                 print("未知")
             }
         }).disposed(by: disposeBag)
 
         items.bind(to: table.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
-
     }
+
 
 }

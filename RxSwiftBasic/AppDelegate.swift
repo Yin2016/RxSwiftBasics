@@ -19,7 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let vc = RxTestViewController()
         let nc = UINavigationController(rootViewController: vc)
+        // 设置导航背景颜色
         nc.navigationBar.barTintColor = .orange
+        // 设置导航元素透明色
+        nc.navigationBar.tintColor = .white
+        // 设置导航标题颜色、字体、字号等
+        nc.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor : UIColor.white,
+            NSAttributedString.Key.font : UIFont.systemFont(ofSize: 20)
+        ]
         
         self.window?.rootViewController = nc
         self.window?.backgroundColor = .white

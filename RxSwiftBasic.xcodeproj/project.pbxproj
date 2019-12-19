@@ -22,10 +22,17 @@
 		19B060389A5FA2291D27EEB1 /* PublishSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B066AFC5F4B0513A444882 /* PublishSubjectViewController.swift */; };
 		19B06190D8050FBC5DBFB16B /* ReplaySubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06DC1C7F8F672EB189E8D /* ReplaySubjectViewController.swift */; };
 		19B062E62C171A2F9BFC5387 /* AsyncSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06D951C8602DE037AD108 /* AsyncSubjectViewController.swift */; };
+		19B062EF17C04D61FB536A46 /* BehaviorSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06F3966D2D17822539160 /* BehaviorSubjectViewController.swift */; };
+		19B063846CA4C96551C33E03 /* DisposableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B068A2C3615807521C18CD /* DisposableViewController.swift */; };
+		19B0651EA0C20E1A9C79404B /* AmbBufferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0697BF26B42BEB2AF359C /* AmbBufferViewController.swift */; };
 		19B065903E39D46A5603702C /* DriverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B064E790170363510788E9 /* DriverController.swift */; };
 		19B065E780188E13F44683D8 /* BinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0614B044E4285626A6F42 /* BinderViewController.swift */; };
+		19B0664035C9DBE40F8C54E6 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0682B552EBC740C762D8C /* OperatorViewController.swift */; };
 		19B067F131010D505E2182A0 /* AnyObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06813ECCF6EE4E83B039E /* AnyObserverViewController.swift */; };
+		19B0685663B4F125CF676C95 /* FilterMapZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06793D0ADC87532CDA4DD /* FilterMapZipViewController.swift */; };
+		19B06BA827F6B349A9E30164 /* SchedulersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0624BC54C784A3F35D02A /* SchedulersViewController.swift */; };
 		19B06D0D9F7B4FDEF2FE2DA3 /* SignalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */; };
+		19B06DA847D8775FB206059F /* ErrorHandlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06B7C8BEF9E5FCB9AFC47 /* ErrorHandlingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,12 +50,19 @@
 		18F7743B23A74B750024DE7C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		18F7743D23A76F000024DE7C /* MaybeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybeViewController.swift; sourceTree = "<group>"; };
 		19B0614B044E4285626A6F42 /* BinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinderViewController.swift; sourceTree = "<group>"; };
+		19B0624BC54C784A3F35D02A /* SchedulersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulersViewController.swift; sourceTree = "<group>"; };
 		19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalViewController.swift; sourceTree = "<group>"; };
 		19B064E790170363510788E9 /* DriverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverController.swift; sourceTree = "<group>"; };
 		19B066AFC5F4B0513A444882 /* PublishSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishSubjectViewController.swift; sourceTree = "<group>"; };
+		19B06793D0ADC87532CDA4DD /* FilterMapZipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterMapZipViewController.swift; sourceTree = "<group>"; };
 		19B06813ECCF6EE4E83B039E /* AnyObserverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyObserverViewController.swift; sourceTree = "<group>"; };
+		19B0682B552EBC740C762D8C /* OperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
+		19B068A2C3615807521C18CD /* DisposableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposableViewController.swift; sourceTree = "<group>"; };
+		19B0697BF26B42BEB2AF359C /* AmbBufferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbBufferViewController.swift; sourceTree = "<group>"; };
+		19B06B7C8BEF9E5FCB9AFC47 /* ErrorHandlingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandlingViewController.swift; sourceTree = "<group>"; };
 		19B06D951C8602DE037AD108 /* AsyncSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncSubjectViewController.swift; sourceTree = "<group>"; };
 		19B06DC1C7F8F672EB189E8D /* ReplaySubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaySubjectViewController.swift; sourceTree = "<group>"; };
+		19B06F3966D2D17822539160 /* BehaviorSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorSubjectViewController.swift; sourceTree = "<group>"; };
 		B6D556FD700F461808FC117C /* Pods-RxSwiftBasic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBasic.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftBasic/Pods-RxSwiftBasic.release.xcconfig"; sourceTree = "<group>"; };
 		E8350C6C512808510FF496C6 /* Pods-RxSwiftBasic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBasic.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftBasic/Pods-RxSwiftBasic.debug.xcconfig"; sourceTree = "<group>"; };
 		F7E48816A92241AFA8A2610F /* Pods_RxSwiftBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +109,10 @@
 				18F7743A23A74AAB0024DE7C /* Observable */,
 				19B067828187BF0A5E72F094 /* Observer */,
 				18F7743F23AA193D0024DE7C /* Subject */,
+				18F7744023AB0BB40024DE7C /* Operator */,
+				18F7744123AB247C0024DE7C /* Disposable */,
+				18F7744223AB248B0024DE7C /* Schedulers */,
+				18F7744323AB24940024DE7C /* ErrorHandling */,
 				18EAE31723A0BB75009D968C /* Main.storyboard */,
 				18EAE2EC239F9070009D968C /* Assets.xcassets */,
 				18EAE2EE239F9070009D968C /* LaunchScreen.storyboard */,
@@ -121,8 +139,43 @@
 				19B06D951C8602DE037AD108 /* AsyncSubjectViewController.swift */,
 				19B066AFC5F4B0513A444882 /* PublishSubjectViewController.swift */,
 				19B06DC1C7F8F672EB189E8D /* ReplaySubjectViewController.swift */,
+				19B06F3966D2D17822539160 /* BehaviorSubjectViewController.swift */,
 			);
 			path = Subject;
+			sourceTree = "<group>";
+		};
+		18F7744023AB0BB40024DE7C /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				19B0682B552EBC740C762D8C /* OperatorViewController.swift */,
+				19B06793D0ADC87532CDA4DD /* FilterMapZipViewController.swift */,
+				19B0697BF26B42BEB2AF359C /* AmbBufferViewController.swift */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
+		18F7744123AB247C0024DE7C /* Disposable */ = {
+			isa = PBXGroup;
+			children = (
+				19B068A2C3615807521C18CD /* DisposableViewController.swift */,
+			);
+			path = Disposable;
+			sourceTree = "<group>";
+		};
+		18F7744223AB248B0024DE7C /* Schedulers */ = {
+			isa = PBXGroup;
+			children = (
+				19B0624BC54C784A3F35D02A /* SchedulersViewController.swift */,
+			);
+			path = Schedulers;
+			sourceTree = "<group>";
+		};
+		18F7744323AB24940024DE7C /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				19B06B7C8BEF9E5FCB9AFC47 /* ErrorHandlingViewController.swift */,
+			);
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 		19B067828187BF0A5E72F094 /* Observer */ = {
@@ -281,6 +334,13 @@
 				19B062E62C171A2F9BFC5387 /* AsyncSubjectViewController.swift in Sources */,
 				19B060389A5FA2291D27EEB1 /* PublishSubjectViewController.swift in Sources */,
 				19B06190D8050FBC5DBFB16B /* ReplaySubjectViewController.swift in Sources */,
+				19B062EF17C04D61FB536A46 /* BehaviorSubjectViewController.swift in Sources */,
+				19B0664035C9DBE40F8C54E6 /* OperatorViewController.swift in Sources */,
+				19B0685663B4F125CF676C95 /* FilterMapZipViewController.swift in Sources */,
+				19B063846CA4C96551C33E03 /* DisposableViewController.swift in Sources */,
+				19B06BA827F6B349A9E30164 /* SchedulersViewController.swift in Sources */,
+				19B06DA847D8775FB206059F /* ErrorHandlingViewController.swift in Sources */,
+				19B0651EA0C20E1A9C79404B /* AmbBufferViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
