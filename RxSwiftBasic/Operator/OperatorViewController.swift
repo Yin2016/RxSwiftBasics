@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-class OperatorViewController : UIViewController {
+class OperatorViewController: UIViewController {
 
     let disposeBag: DisposeBag = DisposeBag()
 
@@ -31,8 +31,8 @@ class OperatorViewController : UIViewController {
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
         // 创建数据流
-        let items = Observable.just([SectionModel(model: "qe", 
-                items: ["filter、map、zip", "amb、buffer"])])
+        let items = Observable.just([SectionModel(model: "qe",
+                items: ["filter、map、zip", "amb、buffer", "CatchError", "CombineLatest", "Concat、ConcatMap"])])
 
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { dataSource, tv, indexPath, element in
             let cell = tv.dequeueReusableCell(withIdentifier: "cell")
@@ -55,14 +55,14 @@ class OperatorViewController : UIViewController {
                 // amb、buffer
                 self.navigationController?.pushViewController(AmbBufferViewController(), animated: true)
             case 2:
-                // Maybe
-                self.navigationController?.pushViewController(MaybeViewController(), animated: true)
+                // CachError
+                self.navigationController?.pushViewController(CatchErrorViewController(), animated: true)
             case 3:
-                // Driver
-                self.navigationController?.pushViewController(DriverController(), animated: true)
+                // CombineLatest
+                self.navigationController?.pushViewController(CombineLatestViewController(), animated: true)
             case 4:
-                // Signal
-                self.navigationController?.pushViewController(SignalViewController(), animated: true)
+                // Concat、ConcatMap
+                self.navigationController?.pushViewController(ConcatViewController(), animated: true)
             case 5:
                 // AnyObserver
                 self.navigationController?.pushViewController(AnyObserverViewController(), animated: true)
