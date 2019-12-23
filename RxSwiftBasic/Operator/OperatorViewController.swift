@@ -32,7 +32,10 @@ class OperatorViewController: UIViewController {
 
         // 创建数据流
         let items = Observable.just([SectionModel(model: "qe",
-                items: ["filter、map、zip", "amb、buffer", "CatchError", "CombineLatest", "Concat、ConcatMap"])])
+                items: ["filter、map、zip", "amb、buffer", "CatchError", "CombineLatest",
+                        "Concat、ConcatMap", "Connect", "Create", "Throttle", "Deferred",
+                        "Delay、DelaySubscription", "Materialize、Dematerialize", "DistincUnitlChanged",
+                        "Single"])])
 
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { dataSource, tv, indexPath, element in
             let cell = tv.dequeueReusableCell(withIdentifier: "cell")
@@ -64,23 +67,29 @@ class OperatorViewController: UIViewController {
                 // Concat、ConcatMap
                 self.navigationController?.pushViewController(ConcatViewController(), animated: true)
             case 5:
-                // AnyObserver
-                self.navigationController?.pushViewController(AnyObserverViewController(), animated: true)
+                // Connect
+                self.navigationController?.pushViewController(ConnectViewController(), animated: true)
             case 6:
-                // Binder
-                self.navigationController?.pushViewController(BinderViewController(), animated: true)
+                // Create
+                self.navigationController?.pushViewController(CreateViewController(), animated: true)
             case 7:
-                // AsyncSubject
-                self.navigationController?.pushViewController(AsyncSubjectViewController(), animated: true)
+                // Debounce
+                self.navigationController?.pushViewController(ThrottleViewController(), animated: true)
             case 8:
-                // PublishSubject
-                self.navigationController?.pushViewController(PublishSubjectViewController(), animated: true)
+                // Deferred
+                self.navigationController?.pushViewController(DeferredViewController(), animated: true)
             case 9:
-                // ReplaySubject
-                self.navigationController?.pushViewController(ReplaySubjectViewController(), animated: true)
+                // Delay、DelaySubscription
+                self.navigationController?.pushViewController(DelayViewController(), animated: true)
             case 10:
-                // BehaviorSubject
-                self.navigationController?.pushViewController(BehaviorSubjectViewController(), animated: true)
+                // Materialize、Dematerialize
+                self.navigationController?.pushViewController(MaterializeViewController(), animated: true)
+            case 11:
+                // DistincUntilChanged
+                self.navigationController?.pushViewController(DistinctUntilChangedViewController(), animated: true)
+            case 12:
+                // Single
+                self.navigationController?.pushViewController(SinglesViewController(), animated: true)
             default:
                 print("未知")
             }
