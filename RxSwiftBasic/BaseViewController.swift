@@ -18,6 +18,7 @@ class BaseViewController: UIViewController {
         let textView = UITextView()
         textView.textColor = .black
         textView.font = UIFont.systemFont(ofSize: 16)
+        textView.isEditable = false
         return textView
     }()
     

@@ -21,7 +21,9 @@
 		18F7743E23A76F000024DE7C /* MaybeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7743D23A76F000024DE7C /* MaybeViewController.swift */; };
 		19B060013989577879A4DDCC /* MaterializeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B065874921DF7316785A10 /* MaterializeViewController.swift */; };
 		19B060389A5FA2291D27EEB1 /* PublishSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B066AFC5F4B0513A444882 /* PublishSubjectViewController.swift */; };
+		19B06071B69A2D13DF5F10E3 /* DoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06244D255D01E4910FBEE /* DoViewController.swift */; };
 		19B06190D8050FBC5DBFB16B /* ReplaySubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06DC1C7F8F672EB189E8D /* ReplaySubjectViewController.swift */; };
+		19B061C05E725CB443953498 /* ElementAtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06A937ED858C604CEB977 /* ElementAtViewController.swift */; };
 		19B062D5104EBF2F1E16BA32 /* SinglesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06585CBC1A13EA4F924D8 /* SinglesViewController.swift */; };
 		19B062E62C171A2F9BFC5387 /* AsyncSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06D951C8602DE037AD108 /* AsyncSubjectViewController.swift */; };
 		19B062EF17C04D61FB536A46 /* BehaviorSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06F3966D2D17822539160 /* BehaviorSubjectViewController.swift */; };
@@ -31,11 +33,15 @@
 		19B065E780188E13F44683D8 /* BinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0614B044E4285626A6F42 /* BinderViewController.swift */; };
 		19B0664035C9DBE40F8C54E6 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0682B552EBC740C762D8C /* OperatorViewController.swift */; };
 		19B067ADEC835472FFD31D41 /* DistinctUntilChangedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06C56B699C578A7B6EA12 /* DistinctUntilChangedViewController.swift */; };
+		19B067DC6F0D5B1A89906518 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06CECD79863090543330F /* SampleViewController.swift */; };
+		19B067EE69B96AB4688CDB41 /* BufferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06AE50C904B95B9C8C8FF /* BufferViewController.swift */; };
 		19B067F131010D505E2182A0 /* AnyObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06813ECCF6EE4E83B039E /* AnyObserverViewController.swift */; };
 		19B0685663B4F125CF676C95 /* FilterMapZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06793D0ADC87532CDA4DD /* FilterMapZipViewController.swift */; };
 		19B0688B09BE8356B5443CEB /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0627B927002DA748DD04C /* ConnectViewController.swift */; };
 		19B06894697C6936C80C28A9 /* DeferredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B060E83AC6D6A387012C32 /* DeferredViewController.swift */; };
 		19B068C1ECCD985DC37631A9 /* CatchErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06DDB24CDF20B50BBFFD3 /* CatchErrorViewController.swift */; };
+		19B069B3B619E54A1EA40112 /* TakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B067F8628AF12B281406DF /* TakeViewController.swift */; };
+		19B069C4335AE9D82224CB93 /* MapFlatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0638D4DCDC3DF04130B98 /* MapFlatViewController.swift */; };
 		19B06BA827F6B349A9E30164 /* SchedulersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0624BC54C784A3F35D02A /* SchedulersViewController.swift */; };
 		19B06D0D9F7B4FDEF2FE2DA3 /* SignalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */; };
 		19B06D1B750833CA77072D1B /* ConcatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B068A1DF61E36E136CF73E /* ConcatViewController.swift */; };
@@ -62,15 +68,18 @@
 		18F7743D23A76F000024DE7C /* MaybeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybeViewController.swift; sourceTree = "<group>"; };
 		19B060E83AC6D6A387012C32 /* DeferredViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeferredViewController.swift; sourceTree = "<group>"; };
 		19B0614B044E4285626A6F42 /* BinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinderViewController.swift; sourceTree = "<group>"; };
+		19B06244D255D01E4910FBEE /* DoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoViewController.swift; sourceTree = "<group>"; };
 		19B0624BC54C784A3F35D02A /* SchedulersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulersViewController.swift; sourceTree = "<group>"; };
 		19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalViewController.swift; sourceTree = "<group>"; };
 		19B0627B927002DA748DD04C /* ConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		19B0638D4DCDC3DF04130B98 /* MapFlatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFlatViewController.swift; sourceTree = "<group>"; };
 		19B064E790170363510788E9 /* DriverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverController.swift; sourceTree = "<group>"; };
 		19B06585CBC1A13EA4F924D8 /* SinglesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglesViewController.swift; sourceTree = "<group>"; };
 		19B065874921DF7316785A10 /* MaterializeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterializeViewController.swift; sourceTree = "<group>"; };
 		19B066AFC5F4B0513A444882 /* PublishSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishSubjectViewController.swift; sourceTree = "<group>"; };
 		19B0676F2009E571F15B7ADA /* ThrottleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrottleViewController.swift; sourceTree = "<group>"; };
 		19B06793D0ADC87532CDA4DD /* FilterMapZipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterMapZipViewController.swift; sourceTree = "<group>"; };
+		19B067F8628AF12B281406DF /* TakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeViewController.swift; sourceTree = "<group>"; };
 		19B06813ECCF6EE4E83B039E /* AnyObserverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyObserverViewController.swift; sourceTree = "<group>"; };
 		19B0682B552EBC740C762D8C /* OperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
 		19B068A1DF61E36E136CF73E /* ConcatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcatViewController.swift; sourceTree = "<group>"; };
@@ -78,9 +87,12 @@
 		19B0697BF26B42BEB2AF359C /* AmbBufferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbBufferViewController.swift; sourceTree = "<group>"; };
 		19B06A03713A11C6D1ABF24A /* DelayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayViewController.swift; sourceTree = "<group>"; };
 		19B06A3B75D9598BA1E06EA2 /* CombineLatestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineLatestViewController.swift; sourceTree = "<group>"; };
+		19B06A937ED858C604CEB977 /* ElementAtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementAtViewController.swift; sourceTree = "<group>"; };
 		19B06ADB3F4C4CE431E80C98 /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		19B06AE50C904B95B9C8C8FF /* BufferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferViewController.swift; sourceTree = "<group>"; };
 		19B06B7C8BEF9E5FCB9AFC47 /* ErrorHandlingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandlingViewController.swift; sourceTree = "<group>"; };
 		19B06C56B699C578A7B6EA12 /* DistinctUntilChangedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistinctUntilChangedViewController.swift; sourceTree = "<group>"; };
+		19B06CECD79863090543330F /* SampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		19B06D951C8602DE037AD108 /* AsyncSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncSubjectViewController.swift; sourceTree = "<group>"; };
 		19B06DC1C7F8F672EB189E8D /* ReplaySubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaySubjectViewController.swift; sourceTree = "<group>"; };
 		19B06DDB24CDF20B50BBFFD3 /* CatchErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchErrorViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +195,12 @@
 				19B065874921DF7316785A10 /* MaterializeViewController.swift */,
 				19B06C56B699C578A7B6EA12 /* DistinctUntilChangedViewController.swift */,
 				19B06585CBC1A13EA4F924D8 /* SinglesViewController.swift */,
+				19B06A937ED858C604CEB977 /* ElementAtViewController.swift */,
+				19B067F8628AF12B281406DF /* TakeViewController.swift */,
+				19B06CECD79863090543330F /* SampleViewController.swift */,
+				19B06244D255D01E4910FBEE /* DoViewController.swift */,
+				19B06AE50C904B95B9C8C8FF /* BufferViewController.swift */,
+				19B0638D4DCDC3DF04130B98 /* MapFlatViewController.swift */,
 			);
 			path = Operator;
 			sourceTree = "<group>";
@@ -385,6 +403,12 @@
 				19B060013989577879A4DDCC /* MaterializeViewController.swift in Sources */,
 				19B067ADEC835472FFD31D41 /* DistinctUntilChangedViewController.swift in Sources */,
 				19B062D5104EBF2F1E16BA32 /* SinglesViewController.swift in Sources */,
+				19B061C05E725CB443953498 /* ElementAtViewController.swift in Sources */,
+				19B069B3B619E54A1EA40112 /* TakeViewController.swift in Sources */,
+				19B067DC6F0D5B1A89906518 /* SampleViewController.swift in Sources */,
+				19B06071B69A2D13DF5F10E3 /* DoViewController.swift in Sources */,
+				19B067EE69B96AB4688CDB41 /* BufferViewController.swift in Sources */,
+				19B069C4335AE9D82224CB93 /* MapFlatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

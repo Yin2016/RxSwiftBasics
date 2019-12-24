@@ -46,7 +46,7 @@ class ThrottleViewController: BaseViewController {
             make.centerY.equalToSuperview().offset(80)
         }
 
-        Debounce()
+        Throttle()
 
         self.codeText.text = """
 
@@ -55,14 +55,14 @@ class ThrottleViewController: BaseViewController {
 
     /**
     * @Date: 2019/12/23 10:39 上午
-    * @Description: debounce操作符 会忽略掉指定时间间隔内人元素
+    * @Description: throttle操作符 会忽略掉指定时间间隔内人元素
     *               例子：当监听输入框内容时无需关注用户输入的每个字符时，可以使用该操作符控制每间隔一段时间发出一个事件
     *                   .throttle(0.5, scheduler: Mainscheduler.instance) 每0.5秒间隔发送一次元素给Observer
     * @Param: -
     * @Author: jie
     * @return: -
     */
-    func Debounce() {
+    func Throttle() {
         self.textField.rx.text
                 .throttle(0.5, scheduler: MainScheduler.instance)
                 .debug("Debug")

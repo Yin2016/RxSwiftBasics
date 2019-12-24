@@ -35,7 +35,8 @@ class OperatorViewController: UIViewController {
                 items: ["filter、map、zip", "amb、buffer", "CatchError", "CombineLatest",
                         "Concat、ConcatMap", "Connect", "Create", "Throttle", "Deferred",
                         "Delay、DelaySubscription", "Materialize、Dematerialize", "DistincUnitlChanged",
-                        "Single"])])
+                        "Single", "ElementAt、IgnoreElements", "Take、TakeLast、Skip", "Sample" , 
+                        "Do", "Buffer、Window", "Map、FlatMap、FlatLatest、FlatMapFirst"])])
 
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { dataSource, tv, indexPath, element in
             let cell = tv.dequeueReusableCell(withIdentifier: "cell")
@@ -90,6 +91,24 @@ class OperatorViewController: UIViewController {
             case 12:
                 // Single
                 self.navigationController?.pushViewController(SinglesViewController(), animated: true)
+            case 13:
+                // ElementAt、IgnoreElements
+                self.navigationController?.pushViewController(ElementAtViewController(), animated: true)
+            case 14:
+                // Take、Takelast、Skip
+                self.navigationController?.pushViewController(TakeViewController(), animated: true)
+            case 15:
+                // Sample
+                self.navigationController?.pushViewController(SampleViewController(), animated: true)
+            case 16:
+                // Do
+                self.navigationController?.pushViewController(DoViewController(), animated: true)
+            case 17:
+                // Buffer、Window
+                self.navigationController?.pushViewController(BufferViewController(), animated: true)
+            case 18:
+                //Map、FlatMap、FlatLatest、FlatMapFirst
+                self.navigationController?.pushViewController(MapFlatViewController(), animated: true)
             default:
                 print("未知")
             }
