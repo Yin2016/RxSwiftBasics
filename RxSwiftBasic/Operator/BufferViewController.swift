@@ -55,6 +55,9 @@ class BufferViewController: BaseViewController {
                                  }
                              }
 
+                             ----------------------------------------
+                             ----------------------------------------
+
                              /**
                              * @Date: 2019/12/24 4:21 下午
                              * @Description: window操作符与buffer相似，buffer是周期性的将元素集合发出来

@@ -32,11 +32,12 @@ class OperatorViewController: UIViewController {
 
         // 创建数据流
         let items = Observable.just([SectionModel(model: "qe",
-                items: ["filter、map、zip", "amb、buffer", "CatchError", "CombineLatest",
-                        "Concat、ConcatMap", "Connect", "Create", "Throttle", "Deferred",
+                items: ["filter、map、zip", "amb、buffer", "CatchError", "CombineLatest、WithLatestFrom、SwitchLatest",
+                        "Concat、ConcatMap", "Public、Connect、Replay、Multicast", "Create", "Throttle", "Deferred",
                         "Delay、DelaySubscription", "Materialize、Dematerialize", "DistincUnitlChanged",
                         "Single", "ElementAt、IgnoreElements", "Take、TakeLast、Skip", "Sample" , 
-                        "Do", "Buffer、Window", "Map、FlatMap、FlatLatest、FlatMapFirst"])])
+                        "Do", "Buffer、Window", "Map、FlatMap、FlatLatest、FlatMapFirst", 
+                        "Scan、GroupBy", "TimeOut、Using", "StartWith、Merge"])])
 
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { dataSource, tv, indexPath, element in
             let cell = tv.dequeueReusableCell(withIdentifier: "cell")
@@ -62,13 +63,13 @@ class OperatorViewController: UIViewController {
                 // CachError
                 self.navigationController?.pushViewController(CatchErrorViewController(), animated: true)
             case 3:
-                // CombineLatest
+                // CombineLatest、WithLatestFrom、SwitchLatest
                 self.navigationController?.pushViewController(CombineLatestViewController(), animated: true)
             case 4:
                 // Concat、ConcatMap
                 self.navigationController?.pushViewController(ConcatViewController(), animated: true)
             case 5:
-                // Connect
+                // Public、Connect、Replay、Multicast
                 self.navigationController?.pushViewController(ConnectViewController(), animated: true)
             case 6:
                 // Create
@@ -109,6 +110,15 @@ class OperatorViewController: UIViewController {
             case 18:
                 //Map、FlatMap、FlatLatest、FlatMapFirst
                 self.navigationController?.pushViewController(MapFlatViewController(), animated: true)
+            case 19:
+                //Scan、GroupBy
+                self.navigationController?.pushViewController(ScanAndGroupByViewController(), animated: true)
+            case 20:
+                //TimeOut、Using
+                self.navigationController?.pushViewController(TimeOutAndUsingViewController(), animated: true)
+            case 21:
+                //StartWith、Merge
+                self.navigationController?.pushViewController(StartWithAndMergeViewController(), animated: true)
             default:
                 print("未知")
             }
