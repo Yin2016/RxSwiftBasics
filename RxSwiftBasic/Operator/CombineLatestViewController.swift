@@ -10,7 +10,7 @@ class CombineLatestViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "CombineLatest"
+        self.navigationItem.title = "CombineLatest、WithLatestFrom、SwitchLatest"
 
         CombineLatest()
 
@@ -26,7 +26,7 @@ class CombineLatestViewController: BaseViewController {
                              /**
                              * @Date: 2019/12/20 1:13 下午
                              * @Description: combineLatest操作等将多个Observable中最新的元素通过一个函数组合起来，然后将这个组合的结果发出来
-                             *               这些源Observable中任何一个元素，他都会发出一个元素（前提是，这些Observable曾经发出过元素）
+                             *               这些源Observables中任何一个发出一个元素，他都会发出一个元素（前提是，这些Observable曾经发出过元素）
                              * @Param: -
                              * @Author: jie
                              * @return: -
@@ -65,7 +65,7 @@ class CombineLatestViewController: BaseViewController {
 
                              /**
                              * @Date: 2019/12/26 11:36 上午
-                             * @Description: withLatestFrom操作符将两个Observable序列合并为一个。没当self序列发射一个元素，便从第二个序列中取出最新的一个值
+                             * @Description: withLatestFrom操作符将两个Observable序列合并为一个。每当self序列发射一个元素，便从第二个序列中取出最新的一个值
                              * @Param:  -
                              * @Author: jie
                              * @return:  -
@@ -148,7 +148,7 @@ class CombineLatestViewController: BaseViewController {
     /**
     * @Date: 2019/12/20 1:13 下午
     * @Description: combineLatest操作等将多个Observable中最新的元素通过一个函数组合起来，然后将这个组合的结果发出来
-    *               这些源Observable中任何一个元素，他都会发出一个元素（前提是，这些Observable曾经发出过元素）
+    *               这些源Observables中任何一个发出一个元素，他都会发出一个元素（前提是，这些Observable曾经发出过元素）
     * @Param: -
     * @Author: jie
     * @return: -
@@ -177,7 +177,7 @@ class CombineLatestViewController: BaseViewController {
 
     /**
     * @Date: 2019/12/26 11:36 上午
-    * @Description: withLatestFrom操作符将两个Observable序列合并为一个。没当self序列发射一个元素，便从第二个序列中取出最新的一个值
+    * @Description: withLatestFrom操作符将两个Observable序列合并为一个。每当self序列发射一个元素，便从第二个序列中取出最新的一个值
     * @Param:  -
     * @Author: jie
     * @return:  -

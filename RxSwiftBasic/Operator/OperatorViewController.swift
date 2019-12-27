@@ -33,11 +33,12 @@ class OperatorViewController: UIViewController {
         // 创建数据流
         let items = Observable.just([SectionModel(model: "qe",
                 items: ["filter、map、zip", "amb、buffer", "CatchError", "CombineLatest、WithLatestFrom、SwitchLatest",
-                        "Concat、ConcatMap", "Public、Connect、Replay、Multicast", "Create", "Throttle", "Deferred",
+                        "Concat、ConcatMap", "Public、Connect、Replay、Multicast、ReCount", "Create", "Throttle", "Deferred",
                         "Delay、DelaySubscription", "Materialize、Dematerialize", "DistincUnitlChanged",
-                        "Single", "ElementAt、IgnoreElements", "Take、TakeLast、Skip", "Sample" , 
+                        "Single", "ElementAt、IgnoreElements", "Take、TakeLast、TakeUntil、TakeWhile", "Sample" , 
                         "Do", "Buffer、Window", "Map、FlatMap、FlatLatest、FlatMapFirst", 
-                        "Scan、GroupBy", "TimeOut、Using", "StartWith、Merge"])])
+                        "Scan、GroupBy", "TimeOut、Using", "StartWith、Merge", "Share、Reduce", 
+                        "Skip、SkipUntil、SkipWhile"])])
 
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { dataSource, tv, indexPath, element in
             let cell = tv.dequeueReusableCell(withIdentifier: "cell")
@@ -69,7 +70,7 @@ class OperatorViewController: UIViewController {
                 // Concat、ConcatMap
                 self.navigationController?.pushViewController(ConcatViewController(), animated: true)
             case 5:
-                // Public、Connect、Replay、Multicast
+                // Public、Connect、Replay、Multicast、ReCount
                 self.navigationController?.pushViewController(ConnectViewController(), animated: true)
             case 6:
                 // Create
@@ -96,7 +97,7 @@ class OperatorViewController: UIViewController {
                 // ElementAt、IgnoreElements
                 self.navigationController?.pushViewController(ElementAtViewController(), animated: true)
             case 14:
-                // Take、Takelast、Skip
+                // Take、Takelast、TakeUntil、TakeWhile
                 self.navigationController?.pushViewController(TakeViewController(), animated: true)
             case 15:
                 // Sample
@@ -119,6 +120,12 @@ class OperatorViewController: UIViewController {
             case 21:
                 //StartWith、Merge
                 self.navigationController?.pushViewController(StartWithAndMergeViewController(), animated: true)
+            case 22:
+                //Share、Reduce
+                self.navigationController?.pushViewController(ShareViewController(), animated: true)
+            case 23:
+                //Skip、SkipUntil、SkipWhile
+                self.navigationController?.pushViewController(SkipViewController(), animated: true)
             default:
                 print("未知")
             }

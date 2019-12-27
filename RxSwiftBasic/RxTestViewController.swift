@@ -25,6 +25,8 @@ class RxTestViewController: UIViewController {
 
         self.view.backgroundColor = .white
 
+        self.navigationItem.title = "RxSwift笔记"
+
         self.view.addSubview(table)
         table.snp.makeConstraints { (make) in
             make.size.equalToSuperview()

@@ -53,6 +53,16 @@ class BufferViewController: BaseViewController {
                                  DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                                      subject.onCompleted()
                                  }
+
+                                /*
+                                 输出：
+                                 next(["a", "b", "c"])
+                                 next(["1", "2", "3"])
+                                 next(["A"])
+                                 next([])
+                                 next([])
+                                 completed
+                                 */
                              }
 
                              ----------------------------------------
@@ -97,6 +107,23 @@ class BufferViewController: BaseViewController {
                                  DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                                      subject.onCompleted()
                                  }
+
+                                /*
+                                 输出：
+                                 ubscribe: RxSwift.AddRef<Swift.String>
+                                 a
+                                 b
+                                 c
+                                 subscribe: RxSwift.AddRef<Swift.String>
+                                 1
+                                 2
+                                 3
+                                 subscribe: RxSwift.AddRef<Swift.String>
+                                 A
+                                 subscribe: RxSwift.AddRef<Swift.String>
+                                 subscribe: RxSwift.AddRef<Swift.String>
+                                 subscribe: RxSwift.AddRef<Swift.String>
+                                 */
                              }
                              """
     }
@@ -135,6 +162,16 @@ class BufferViewController: BaseViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             subject.onCompleted()
         }
+
+        /*
+        输出：
+        next(["a", "b", "c"])
+        next(["1", "2", "3"])
+        next(["A"])
+        next([])
+        next([])
+        completed
+        */
     }
 
     /**
@@ -173,8 +210,25 @@ class BufferViewController: BaseViewController {
 
         subject.onNext("A")
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             subject.onCompleted()
         }
+
+        /*
+        输出：
+        ubscribe: RxSwift.AddRef<Swift.String>
+        a
+        b
+        c
+        subscribe: RxSwift.AddRef<Swift.String>
+        1
+        2
+        3
+        subscribe: RxSwift.AddRef<Swift.String>
+        A
+        subscribe: RxSwift.AddRef<Swift.String>
+        subscribe: RxSwift.AddRef<Swift.String>
+        subscribe: RxSwift.AddRef<Swift.String>
+        */
     }
 }

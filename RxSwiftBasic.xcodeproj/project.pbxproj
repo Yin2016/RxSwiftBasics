@@ -22,12 +22,14 @@
 		19B060013989577879A4DDCC /* MaterializeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B065874921DF7316785A10 /* MaterializeViewController.swift */; };
 		19B060389A5FA2291D27EEB1 /* PublishSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B066AFC5F4B0513A444882 /* PublishSubjectViewController.swift */; };
 		19B06071B69A2D13DF5F10E3 /* DoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06244D255D01E4910FBEE /* DoViewController.swift */; };
+		19B060D201D44EC2B53A880C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B066A7CA0E4C1F3E28A6F2 /* ShareViewController.swift */; };
 		19B06190D8050FBC5DBFB16B /* ReplaySubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06DC1C7F8F672EB189E8D /* ReplaySubjectViewController.swift */; };
 		19B061C05E725CB443953498 /* ElementAtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06A937ED858C604CEB977 /* ElementAtViewController.swift */; };
 		19B062D5104EBF2F1E16BA32 /* SinglesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06585CBC1A13EA4F924D8 /* SinglesViewController.swift */; };
 		19B062E62C171A2F9BFC5387 /* AsyncSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06D951C8602DE037AD108 /* AsyncSubjectViewController.swift */; };
 		19B062EF17C04D61FB536A46 /* BehaviorSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06F3966D2D17822539160 /* BehaviorSubjectViewController.swift */; };
 		19B063846CA4C96551C33E03 /* DisposableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B068A2C3615807521C18CD /* DisposableViewController.swift */; };
+		19B063CEEBD631E551C1BF50 /* SkipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0695095A5915F699E63A0 /* SkipViewController.swift */; };
 		19B0651EA0C20E1A9C79404B /* AmbBufferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0697BF26B42BEB2AF359C /* AmbBufferViewController.swift */; };
 		19B0655CD1DB5843CCE1B298 /* TimeOutAndUsingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B063367B039371A983475E /* TimeOutAndUsingViewController.swift */; };
 		19B065903E39D46A5603702C /* DriverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B064E790170363510788E9 /* DriverController.swift */; };
@@ -80,6 +82,7 @@
 		19B064E790170363510788E9 /* DriverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverController.swift; sourceTree = "<group>"; };
 		19B06585CBC1A13EA4F924D8 /* SinglesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglesViewController.swift; sourceTree = "<group>"; };
 		19B065874921DF7316785A10 /* MaterializeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterializeViewController.swift; sourceTree = "<group>"; };
+		19B066A7CA0E4C1F3E28A6F2 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		19B066AFC5F4B0513A444882 /* PublishSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishSubjectViewController.swift; sourceTree = "<group>"; };
 		19B0676F2009E571F15B7ADA /* ThrottleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrottleViewController.swift; sourceTree = "<group>"; };
 		19B06793D0ADC87532CDA4DD /* FilterMapZipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterMapZipViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		19B0682B552EBC740C762D8C /* OperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
 		19B068A1DF61E36E136CF73E /* ConcatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcatViewController.swift; sourceTree = "<group>"; };
 		19B068A2C3615807521C18CD /* DisposableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposableViewController.swift; sourceTree = "<group>"; };
+		19B0695095A5915F699E63A0 /* SkipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkipViewController.swift; sourceTree = "<group>"; };
 		19B0697BF26B42BEB2AF359C /* AmbBufferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbBufferViewController.swift; sourceTree = "<group>"; };
 		19B06A03713A11C6D1ABF24A /* DelayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayViewController.swift; sourceTree = "<group>"; };
 		19B06A3B75D9598BA1E06EA2 /* CombineLatestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineLatestViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 				19B06C5D1702B27C99DB36A1 /* ScanAndGroupByViewController.swift */,
 				19B063367B039371A983475E /* TimeOutAndUsingViewController.swift */,
 				19B06D4589929BA01EECF19D /* StartWithAndMergeViewController.swift */,
+				19B066A7CA0E4C1F3E28A6F2 /* ShareViewController.swift */,
+				19B0695095A5915F699E63A0 /* SkipViewController.swift */,
 			);
 			path = Operator;
 			sourceTree = "<group>";
@@ -421,6 +427,8 @@
 				19B06E9E3561F3472D3F4B52 /* ScanAndGroupByViewController.swift in Sources */,
 				19B0655CD1DB5843CCE1B298 /* TimeOutAndUsingViewController.swift in Sources */,
 				19B06D299ED020901BF824C3 /* StartWithAndMergeViewController.swift in Sources */,
+				19B060D201D44EC2B53A880C /* ShareViewController.swift in Sources */,
+				19B063CEEBD631E551C1BF50 /* SkipViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

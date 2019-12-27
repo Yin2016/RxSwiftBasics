@@ -19,7 +19,7 @@ class ScanAndGroupByViewController : BaseViewController {
         }
 
         self.codeText.text = """
-                                 /**
+                             /**
                              * @Date: 2019/12/26 9:01 上午
                              * @Description: Scan操作符就是先给一个初始化参数，然后不断的拿前一个结果和最新的值进行操作
                              * @Param: -
