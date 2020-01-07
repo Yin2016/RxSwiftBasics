@@ -157,6 +157,7 @@
 				18F7744123AB247C0024DE7C /* Disposable */,
 				18F7744223AB248B0024DE7C /* Schedulers */,
 				18F7744323AB24940024DE7C /* ErrorHandling */,
+				19B064A192298C82A4A8D1DC /* MVVM */,
 				18EAE31723A0BB75009D968C /* Main.storyboard */,
 				18EAE2EC239F9070009D968C /* Assets.xcassets */,
 				18EAE2EE239F9070009D968C /* LaunchScreen.storyboard */,
@@ -242,6 +243,13 @@
 				19B06B7C8BEF9E5FCB9AFC47 /* ErrorHandlingViewController.swift */,
 			);
 			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		19B064A192298C82A4A8D1DC /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		19B067828187BF0A5E72F094 /* Observer */ = {

@@ -12,5 +12,6 @@ target 'RxSwiftBasic' do
   pod 'RxAtomic', '~>4.4.2'
   pod 'Moya', '~>13.0.1'
   pod 'SwiftyJSON', '~>5.0.0'
+  pod 'Result', '~> 4.1'
 
 end
