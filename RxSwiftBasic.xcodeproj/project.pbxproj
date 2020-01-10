@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EB26D90B5A0E8079125099A /* Pods_RxSwiftBasic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E48816A92241AFA8A2610F /* Pods_RxSwiftBasic.framework */; };
+		18CC7F1F23C8543100267AD7 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC7F1E23C8543100267AD7 /* GitHubAPI.swift */; };
 		18EAE2E4239F906D009D968C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAE2E3239F906D009D968C /* AppDelegate.swift */; };
 		18EAE2E8239F906D009D968C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAE2E7239F906D009D968C /* ViewController.swift */; };
 		18EAE2ED239F9070009D968C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EAE2EC239F9070009D968C /* Assets.xcassets */; };
@@ -34,11 +35,13 @@
 		19B0655CD1DB5843CCE1B298 /* TimeOutAndUsingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B063367B039371A983475E /* TimeOutAndUsingViewController.swift */; };
 		19B065903E39D46A5603702C /* DriverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B064E790170363510788E9 /* DriverController.swift */; };
 		19B065E780188E13F44683D8 /* BinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0614B044E4285626A6F42 /* BinderViewController.swift */; };
+		19B06632E179E8A98A025C6E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B068F9DEB1652C315096F1 /* RootViewController.swift */; };
 		19B0664035C9DBE40F8C54E6 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0682B552EBC740C762D8C /* OperatorViewController.swift */; };
 		19B067ADEC835472FFD31D41 /* DistinctUntilChangedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06C56B699C578A7B6EA12 /* DistinctUntilChangedViewController.swift */; };
 		19B067DC6F0D5B1A89906518 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06CECD79863090543330F /* SampleViewController.swift */; };
 		19B067EE69B96AB4688CDB41 /* BufferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06AE50C904B95B9C8C8FF /* BufferViewController.swift */; };
 		19B067F131010D505E2182A0 /* AnyObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06813ECCF6EE4E83B039E /* AnyObserverViewController.swift */; };
+		19B0685063CCF9F531738EC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0617E886CDE01449C9824 /* LoginViewController.swift */; };
 		19B0685663B4F125CF676C95 /* FilterMapZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B06793D0ADC87532CDA4DD /* FilterMapZipViewController.swift */; };
 		19B0688B09BE8356B5443CEB /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0627B927002DA748DD04C /* ConnectViewController.swift */; };
 		19B06894697C6936C80C28A9 /* DeferredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B060E83AC6D6A387012C32 /* DeferredViewController.swift */; };
@@ -58,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18CC7F1E23C8543100267AD7 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		18EAE2E0239F906D009D968C /* RxSwiftBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EAE2E3239F906D009D968C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18EAE2E7239F906D009D968C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 		18F7743D23A76F000024DE7C /* MaybeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybeViewController.swift; sourceTree = "<group>"; };
 		19B060E83AC6D6A387012C32 /* DeferredViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeferredViewController.swift; sourceTree = "<group>"; };
 		19B0614B044E4285626A6F42 /* BinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinderViewController.swift; sourceTree = "<group>"; };
+		19B0617E886CDE01449C9824 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		19B06244D255D01E4910FBEE /* DoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoViewController.swift; sourceTree = "<group>"; };
 		19B0624BC54C784A3F35D02A /* SchedulersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulersViewController.swift; sourceTree = "<group>"; };
 		19B06275FAD1B3BDC04CB7F7 /* SignalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +96,7 @@
 		19B0682B552EBC740C762D8C /* OperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
 		19B068A1DF61E36E136CF73E /* ConcatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcatViewController.swift; sourceTree = "<group>"; };
 		19B068A2C3615807521C18CD /* DisposableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposableViewController.swift; sourceTree = "<group>"; };
+		19B068F9DEB1652C315096F1 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		19B0695095A5915F699E63A0 /* SkipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkipViewController.swift; sourceTree = "<group>"; };
 		19B0697BF26B42BEB2AF359C /* AmbBufferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbBufferViewController.swift; sourceTree = "<group>"; };
 		19B06A03713A11C6D1ABF24A /* DelayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +130,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18CC7F1923C8520600267AD7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				19B0617E886CDE01449C9824 /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18CC7F1A23C8521200267AD7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18CC7F1B23C8521E00267AD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18CC7F1C23C8523700267AD7 /* APi */ = {
+			isa = PBXGroup;
+			children = (
+				18CC7F1E23C8543100267AD7 /* GitHubAPI.swift */,
+			);
+			path = APi;
+			sourceTree = "<group>";
+		};
 		18EAE2D7239F906D009D968C = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +184,7 @@
 				18EAE2E3239F906D009D968C /* AppDelegate.swift */,
 				18EAE2E7239F906D009D968C /* ViewController.swift */,
 				18F7743223A36AAA0024DE7C /* RxTestViewController.swift */,
+				19B068F9DEB1652C315096F1 /* RootViewController.swift */,
 				18F7743623A7485E0024DE7C /* BaseViewController.swift */,
 				18F7743B23A74B750024DE7C /* Common.swift */,
 				18F7743A23A74AAB0024DE7C /* Observable */,
@@ -248,6 +285,10 @@
 		19B064A192298C82A4A8D1DC /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				18CC7F1923C8520600267AD7 /* ViewController */,
+				18CC7F1A23C8521200267AD7 /* ViewModel */,
+				18CC7F1B23C8521E00267AD7 /* View */,
+				18CC7F1C23C8523700267AD7 /* APi */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -399,6 +440,7 @@
 				18F7743923A748B10024DE7C /* CompletableViewController.swift in Sources */,
 				18EAE2E8239F906D009D968C /* ViewController.swift in Sources */,
 				18F7743323A36AAA0024DE7C /* RxTestViewController.swift in Sources */,
+				18CC7F1F23C8543100267AD7 /* GitHubAPI.swift in Sources */,
 				18F7743523A384FA0024DE7C /* SingleViewController.swift in Sources */,
 				18EAE2E4239F906D009D968C /* AppDelegate.swift in Sources */,
 				19B065903E39D46A5603702C /* DriverController.swift in Sources */,
@@ -437,6 +479,8 @@
 				19B06D299ED020901BF824C3 /* StartWithAndMergeViewController.swift in Sources */,
 				19B060D201D44EC2B53A880C /* ShareViewController.swift in Sources */,
 				19B063CEEBD631E551C1BF50 /* SkipViewController.swift in Sources */,
+				19B0685063CCF9F531738EC7 /* LoginViewController.swift in Sources */,
+				19B06632E179E8A98A025C6E /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

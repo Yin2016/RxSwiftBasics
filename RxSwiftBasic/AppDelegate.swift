@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let vc = RxTestViewController()
+        let vc = RootViewController()
         let nc = UINavigationController(rootViewController: vc)
         // 设置导航背景颜色
         nc.navigationBar.barTintColor = .orange
