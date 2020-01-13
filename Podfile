@@ -12,7 +12,7 @@ target 'RxSwiftBasic' do
   pod 'RxAtomic', '~>4.4.2'
   pod 'SwiftyJSON', '~>5.0.0'
   pod 'Result', '~> 4.1'
-  pod 'Moya-ObjectMapper', '~> 2.8'
+  pod 'Moya', '~> 13.0.1'
   pod 'ObjectMapper', '~> 3.5.1'
 
 end

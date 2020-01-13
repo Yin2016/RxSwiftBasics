@@ -8,6 +8,7 @@
 
 import UIKit
 import Moya
+import RxSwift
 
 // 初始化GitHub请求的Provider
 let GitHubProvider = MoyaProvider<GitHubApi>()
@@ -25,7 +26,7 @@ extension GitHubApi : TargetType {
         case .userNameAvailable(_):
             return URL(string: "https://github.com")!
         case .logIn:
-            return URL(string: "https://github.com")!
+            return URL(string: "https://www.baidu.com")!
         }
     }
     

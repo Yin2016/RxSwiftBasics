@@ -1,16 +1,11 @@
 PODS:
   - Alamofire (4.9.0)
   - Differentiator (4.0.1)
-  - Moya (12.0.1):
-    - Moya/Core (= 12.0.1)
-  - Moya-ObjectMapper (2.8):
-    - Moya-ObjectMapper/Core (= 2.8)
-  - Moya-ObjectMapper/Core (2.8):
-    - Moya (~> 12.0)
-    - ObjectMapper (~> 3.4)
-  - Moya/Core (12.0.1):
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
-    - Result (~> 4.0)
+    - Result (~> 4.1)
   - ObjectMapper (3.5.1)
   - Result (4.1.0)
   - RxAtomic (4.4.2)
@@ -29,7 +24,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.9.0)
-  - Moya-ObjectMapper (~> 2.8)
+  - Moya (~> 13.0.1)
   - ObjectMapper (~> 3.5.1)
   - Result (~> 4.1)
   - RxAtomic (~> 4.4.2)
@@ -44,7 +39,6 @@ SPEC REPOS:
     - Alamofire
     - Differentiator
     - Moya
-    - Moya-ObjectMapper
     - ObjectMapper
     - Result
     - RxAtomic
@@ -58,8 +52,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
-  Moya-ObjectMapper: c514b5eafcfd5e260f85f7a5bf66895a217e2b37
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
@@ -70,6 +63,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 078f8c80d515330e3266bd4a19085c5b6ea6d9b9
+PODFILE CHECKSUM: bdf259fb5f4990f3840e9440c7bfe0c02acc3eda
 
 COCOAPODS: 1.7.5

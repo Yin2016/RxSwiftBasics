@@ -7,6 +7,9 @@ import Foundation
 import RxSwift
 import RxCocoa
 import SnapKit
+import Moya
+import Result
+import ObjectMapper
 
 class LoginViewController : BaseViewController {
     
@@ -108,6 +111,13 @@ class LoginViewController : BaseViewController {
         // 点击事件绑定
         btn.rx.tap.subscribe(onNext: { [weak self] in
             self?.showAlert()
+            
+            let gitHubSignupService = GitHubSignupService()
+            
+            gitHubSignupService.validateUserName("...33a").subscribe(onNext: { (result : ValidationResults) in
+                print("\(result.description)")
+            }).disposed(by: self!.disposeBag)
+            
         }).disposed(by: self.disposeBag)
         return btn
     }()
@@ -116,6 +126,8 @@ class LoginViewController : BaseViewController {
         super.viewDidLoad()
         
         setUI()
+        
+        initViewModel()
     }
     
     func setUI() {
@@ -204,6 +216,34 @@ class LoginViewController : BaseViewController {
         
     }
     
+    /// 初始化ViewModel
+    func initViewModel() {
+        
+        let viewModel = GitHubSignupViewModel(input:
+            (userName : userNameTextFeild.rx.text.orEmpty.asDriver(),
+             password : userPsdTextFeild.rx.text.orEmpty.asDriver(),
+             passwordRepeated : userRepeatedPsdTextFeild.rx.text.orEmpty.asDriver(),
+             loginTaps : loginBtn.rx.tap.asSignal()
+             ), dependency:
+            (gitHubApi : .logIn,
+             gitHubSignupService : GitHubSignupService()))
+        
+        // 用户名验证结果绑定
+        viewModel.validatedUserName.drive(userNameValid.rx.validationResult).disposed(by: disposeBag)
+        
+        // 密码验证结果绑定
+        viewModel.validatedPassword.drive(userPsdValid.rx.validationResult).disposed(by: disposeBag)
+        
+        // 确认密码验证
+        viewModel.validatedPasswordRepeated.drive(userRepeatedPsdValid.rx.validationResult).disposed(by: disposeBag)
+        
+        // 注册按钮是否可用
+        viewModel.signupEnable.drive(onNext: { [weak self] (valid) in
+            self?.loginBtn.isEnabled = valid
+        }).disposed(by: disposeBag)
+        
+    }
+    
     func showAlert() {
         //        let alertController = UIAlertController(
         //            title: "RxExample", message: "This is wonderful", preferredStyle: .actionSheet
@@ -220,4 +260,15 @@ class LoginViewController : BaseViewController {
         //        self.present(alertController, animated: true, completion: nil)
         print("ShowAlert")
     }
+}
+
+extension Reactive where Base : UILabel {
+    // 让验证结果ValidationResult类型可以绑定在Label上
+    var validationResult : Binder<ValidationResults> {
+        return Binder(self.base) { label, result in
+            label.textColor = result.textColor
+            label.text = result.description
+        }
+    }
+    
 }
